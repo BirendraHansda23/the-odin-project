@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.info-card {
+  @apply w-[300px] flex flex-col items-center text-center;
+}
+
+.info-card img {
+  @apply w-full aspect-square object-cover rounded-lg border-4 border-blue-500;
+}
+
+.info-card p {
+  @apply text-[16px] mt-2;
+}

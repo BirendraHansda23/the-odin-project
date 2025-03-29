@@ -1,0 +1,32 @@
+
+ Font Used:  
+- Roboto  
+
+ Colors:  
+- Dark Background Color (Hero & Footer): #1F2937  
+- Button & Call to Action Background Color: #3882F6  
+- Quote Section Background Color: #E5E7EB  
+
+ Text Styles:  
+1. Hero Main Text:  
+   - Font Size: 48px  
+   - Color: #F9FAF8  
+   - Font Weight: 900  
+
+2. Hero Secondary Text & Header Link Text:  
+   - Font Size: 18px  
+   - Color: #E5E7EB  
+
+3. Header Logo Text:  
+   - Font Size: 24px  
+   - Color: #F9FAF8  
+
+4. Information Header Text:  
+   - Font Size: 36px  
+   - Color: #1F2937  
+   - Font Weight: 900  
+
+5. Quote Text:  
+   - Font Size: 36px  
+   - Color: #1F2937  
+   - Style: Light Italic

@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Document</title>
+  </head>
+  <body class="font-roboto flex flex-col">
+    <!-- navbar -->
+    <div class="bg-gray-800">
+      <nav
+        class="max-w-6xl mx-auto flex flex-col items-center gap-4 py-4 sm:flex-row sm:justify-between"
+      >
+        <div class="text-2xl text-white font-semibold">
+          <a href="">LOGO</a>
+        </div>
+        <ul
+          class="flex flex-col items-center text-gray-300 sm:flex-row sm:gap-6"
+        >
+          <li><a href="">About</a></li>
+          <li><a href="">Contact Us</a></li>
+          <li><a href="">The Odin Project</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- hero -->
+    <div class="bg-gray-800 text-white">
+      <section
+        class="px-6 max-w-6xl mx-auto py-16 flex flex-col-reverse gap-6 md:flex-row md:items-center"
+      >
+        <!-- Text Section -->
+        <div class="flex-1 text-center md:text-left">
+          <h1 class="text-4xl font-black md:text-5xl">
+            This website is awesome
+          </h1>
+          <p class="text-base md:text-lg text-gray-300 mt-3">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit
+            veritatis fugit quo voluptas officiis. Non ea possimus velit ad.
+          </p>
+          <button
+            class="mt-4 rounded-lg bg-blue-500 px-6 py-2 text-white hover:bg-blue-600 transition"
+          >
+            Sign up
+          </button>
+        </div>
+
+        <!-- Image Section -->
+        <div class="flex-1 flex justify-center">
+          <img
+            src="https://images.pexels.com/photos/3448250/pexels-photo-3448250.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt="placeholder"
+            class="w-72 md:w-96 object-cover rounded-lg"
+          />
+        </div>
+      </section>
+    </div>
+
+    <!-- main-body -->
+    <section class="max-w-6xl mx-auto py-12 px-6">
+      <h3 class="text-center text-3xl font-black">Some random information.</h3>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-10">
+        <!-- Cards -->
+        <div class="flex flex-col items-center text-center">
+          <img
+            src="https://images.pexels.com/photos/159555/soccer-football-athlete-player-159555.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt="img1"
+            class="w-full aspect-square object-cover rounded-xl border-4 border-blue-500"
+          />
+          <p class="text-lg mt-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+
+        <div class="flex flex-col items-center text-center">
+          <img
+            src="https://images.pexels.com/photos/9519535/pexels-photo-9519535.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt="img2"
+            class="w-full aspect-square object-cover rounded-xl border-4 border-blue-500"
+          />
+          <p class="text-lg mt-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+
+        <div class="flex flex-col items-center text-center">
+          <img
+            src="https://images.pexels.com/photos/3154902/pexels-photo-3154902.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt="img3"
+            class="w-full aspect-square object-cover rounded-xl border-4 border-blue-500"
+          />
+          <p class="text-lg mt-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+
+        <div class="flex flex-col items-center text-center">
+          <img
+            src="https://images.pexels.com/photos/3653385/pexels-photo-3653385.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt="img4"
+            class="w-full aspect-square object-cover rounded-xl border-4 border-blue-500"
+          />
+          <p class="text-lg mt-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section class="bg-gray-300 px-6">
+      <div class="max-w-6xl mx-auto py-12">
+        <p
+          class="text-lg sm:text-xl md:text-2xl font-light italic leading-relaxed"
+        >
+          "I once cried because I had no shoes to play football with my friends,
+          but one day I saw a man who had no feet, and I realized how rich I
+          am."
+        </p>
+        <p class="text-right text-lg sm:text-xl font-semibold mt-4">
+          - Zinedine Zidane, French football legend
+        </p>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <div class="px-6">
+      <section
+        class="max-w-6xl mx-auto my-12 bg-blue-500 rounded-lg flex flex-col md:flex-row justify-between items-center md:items-start p-8 md:p-12"
+      >
+        <div class="text-white text-center md:text-left">
+          <p class="text-xl font-semibold">Call to action! It's time!</p>
+          <p>
+            Sign up for our product by clicking that button right over there!
+          </p>
+        </div>
+        <div class="mt-4 md:mt-0">
+          <button
+            class="rounded-lg px-6 py-2 text-white border-2 border-white hover:bg-white hover:text-blue-500 transition duration-300"
+          >
+            Sign up
+          </button>
+        </div>
+      </section>
+    </div>
+
+    <!-- footer -->
+    <footer class="bg-gray-800 py-6">
+      <p class="text-center text-white text-sm sm:text-base">
+        Copyright © Birendra Kumar Hansda 2025
+      </p>
+    </footer>
+  </body>
+</html>
