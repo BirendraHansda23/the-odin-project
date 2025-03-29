@@ -1,0 +1,12 @@
+[33m5ce2440[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{0}: checkout: moving from 5631ad7ef5b90204f936bda01463613ce4b22ce5 to main
+[33m5631ad7[m HEAD@{1}: commit: Remove docs folder and add favicon
+[33mc63a5a1[m HEAD@{2}: checkout: moving from main to c63a5a1
+[33m5ce2440[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{3}: checkout: moving from main to main
+[33m5ce2440[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{4}: commit: Add site favicon and update site name
+[33m2a50863[m HEAD@{5}: commit: Moved project folder to docs/
+[33mb256502[m HEAD@{6}: commit: Moved project to docs for GitHub Pages
+[33mc63a5a1[m HEAD@{7}: pull origin main --rebase (finish): returning to refs/heads/main
+[33mc63a5a1[m HEAD@{8}: pull origin main --rebase (pick): Build the first version of the site
+[33m83d5b55[m HEAD@{9}: pull origin main --rebase (start): checkout 83d5b55740f975ae8b5e9c77c7362a45baf8ab2e
+[33m3741115[m HEAD@{10}: commit: Build the first version of the site
+[33m9dbf143[m HEAD@{11}: clone: from https://github.com/BirendraHansda23/the-odin-project.git
