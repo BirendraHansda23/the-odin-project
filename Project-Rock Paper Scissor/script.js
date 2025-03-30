@@ -3,24 +3,9 @@ function getComputerChoice() {
   return arr[Math.floor(Math.random() * 3)];
 }
 
-function getMyChoice() {
-  let myChoice;
-  while (true) {
-    myChoice = prompt("Enter your choice (Rock, Paper, Scissor):").trim();
-    if (["rock", "paper", "scissor"].includes(myChoice.toLowerCase())) break;
-    alert("Invalid choice! Please enter Rock, Paper, or Scissor.");
-  }
-  return myChoice;
-}
-
-var humanScore = 0;
-var computerScore = 0;
-
 function playRound(humanChoice, computerChoice) {
   const upperHumanChoice = humanChoice.toUpperCase();
   const upperComputerChoice = computerChoice.toUpperCase();
-  console.log(upperHumanChoice);
-  console.log(upperComputerChoice);
 
   const winCond = {
     ROCK: "SCISSOR",
@@ -29,21 +14,49 @@ function playRound(humanChoice, computerChoice) {
   };
 
   if (upperHumanChoice === upperComputerChoice) {
-    console.log("It's a draw!");
+    decision.innerHTML = "<h3>It's a draw!</h3>";
   } else if (winCond[upperHumanChoice] === upperComputerChoice) {
     humanScore += 1;
-    console.log(`You win! ${upperHumanChoice} beats ${upperComputerChoice}`);
+    decision.innerHTML = `<h3>You win! ${upperHumanChoice} beats ${upperComputerChoice}</h3>`;
   } else {
     computerScore += 1;
-    console.log(`You lose! ${upperComputerChoice} beats ${upperHumanChoice}`);
+    decision.innerHTML = `<h3>You lose! ${upperComputerChoice} beats ${upperHumanChoice}</h3>`;
   }
 }
 
-function playGame() {
-  for (let i = 1; i <= 5; i++) {
-    playRound(getMyChoice(), getComputerChoice());
-    console.log(`${humanScore}:${computerScore}`);
+function playGame(humanChoice) {
+  playRound(humanChoice, getComputerChoice());
+  score.innerHTML = `${computerScore} : ${humanScore}`;
+
+  if (computerScore === 5) {
+    decision.innerHTML = `<h3>COM won! Better luck next time.</h3>`;
+  }
+  if (humanScore === 5) {
+    decision.innerHTML = `<h3>Congrats! You won! </h3>`;
   }
 
-  console.log(`Final score: YOU ${humanScore}:${computerScore} COM`);
+  if (humanScore === 5 || computerScore === 5) {
+    setTimeout(resetGame, 3000);
+  }
 }
+
+function resetGame() {
+  humanScore = 0;
+  computerScore = 0;
+  score.innerHTML = "0 : 0";
+  decision.innerHTML = "<h3>New Game! Make your choice.<h3>";
+}
+
+var humanScore = 0;
+var computerScore = 0;
+
+const score = document.querySelector("#score");
+const decision = document.querySelector("#decision");
+const btns = document.querySelectorAll(".btn");
+
+btns.forEach((btn) => {
+  btn.addEventListener("click", (event) => {
+    const myChoice = event.target.id;
+    playGame(myChoice);
+  });
+});

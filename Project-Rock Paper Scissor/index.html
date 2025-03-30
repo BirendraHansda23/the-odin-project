@@ -6,7 +6,27 @@
 
     <title>Document</title>
   </head>
-  <body>
+  <body
+    style="
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 10px;
+    "
+  >
+    <div id="container">
+      <button class="btn" id="rock">Rock</button>
+      <button class="btn" id="paper">Paper</button>
+      <button class="btn" id="scissor">Scissor</button>
+    </div>
+
+    <div id="result" style="border: 2px solid black; padding: 5px">
+      COM <span id="score">0 : 0</span> YOU
+    </div>
+
+    <div id="decision"><h3>Click to start! First to 5 wins!</h3></div>
+
     <script src="./script.js"></script>
   </body>
 </html>
